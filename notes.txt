@@ -1,0 +1,183 @@
+OUTPUT:
+
+1. print
+2.println
+3."\n"
+system.out.print("Hello World");
+(here, print is the function which )
+
+VARIABLES IN JAVA:
+-> a=10,b=20,c=3 are the variable whose value change
+-> 2,5,8,9 are the Literal whose value is not changes
+-> java k ander bahoot types k literal hotel hai
+   jaise char ('a') ('b') '@' '*' (these are character literals)
+   Also its valuue are universal
+
+-> a,b,c...
+   JavaBasics
+   main,print,println 
+   [these are called IDENTIFIER]
+   identifiers in java are a sequence of character to identify something in a program.
+
+-> DATA TYPES IN JAVA:
+
+  (primitive jo already exist krte hai java k ander)
+  (non-primitive type jishse hame khud se banana padhta hai)
+  (java, C++,python is typed language js is not typed language)
+
+  Primitive                                                Non-Primitive
+
+  byte -  1 byte [-128 to 127] 256                             String
+  short - 2 bytes                                               Array
+  char -  2 bytes  ['a' to 'z' 'A'- 'Z' '@' '/' ',']           Class
+  boolean-1 byte   [true, false]                               Object
+  int -   4 bytes   [-2B to +2B]                               Interface
+  long -  8 bytes                          
+  float-  4 bytes
+  double- 8 bytes
+  
+-> comments in java
+  // for single line
+  /* for multiple line 
+  */
+
+-> How to run program
+  // java filename.java
+
+-> INPUT IN JAVA:
+  next
+  nextLine
+  nextInt
+  nextByte
+  nextFloat
+  nextDouble
+  nextBoolean
+  nextShort
+  nextLong
+
+-> Type Conversion (widening data)
+  
+  a. type compatible
+  b. destination type > source type
+
+ // byte < short < int < float < long < double
+
+ -> Type Casting
+   
+   int marks = (int)(99.99f)
+
+  // it called narrowing/explicit conversion
+
+-> Type Promotion in Expressions
+
+ a. java automatically promotes each byte,short,or char operand to int when evaluating an exprssion.
+
+ b. if one operandis long, float or double the whole expression is promoted to long, float, or double respectively.
+
+
+-> Type Promotion in Expressions:
+
+a. java automatically promotes each byte, short, or char operand to int when evaluating an expression.
+ eg-[ char a ='a';
+     short b = 50;
+     a+b (int)]
+
+b. If one operand is long, float, or double the whole expression is promoted to long, float, or double respectively.
+
+// wrong
+ byte b = 5;
+ a = b* 2; (expression) so it type cast as int
+
+// right
+ byte b = 5;
+ a = (byte) (b*2);
+
+->  types of Operator:
+
+ Arithmetic  Operators( Binary/Unary)
+ Relational Operators
+ Logical Operators
+ Bitwise Operators
+ Assignment Operators
+
+-> Arithmetic Operator
+ 
+ Binary (two)      Unary(one)
+ +                   ++
+ -                   --
+ *
+ /
+ %(modulo)// remainder
+
+-> Unary Operator
+
+pre Increment           post Increment
+ 
+ ++a // --a                 a--/ a++
+1. value change        1. value use
+2. value use           2. value change
+
+
+-> Relational Operator
+ == (equal)
+ != (not equal)
+ >
+ <
+ >=
+ <=
+
+-> Logical Operator
+ &&  (AND)
+ ||  (OR)
+ !   (NOT)
+
+-> Assignment Operators
+ =
+ +=  (A=A+10; A+=10)
+ -=  (B=B-5; B-=5)
+ *=
+ /=
+ %=
+
+-> Conditional Statements
+
+ if,else
+ else if
+ ternary Operator
+ switch
+
+NOTES: If statements always check whether it is true or false
+       so, we use else if , it check only if statements are false
+
+-> ternary Operator
+  
+  variable = condition? statement1 : statements2;
+   (store)              (true)  nhi toh  (false)
+
+eg: int larger = (5>3)?5:3; 
+    String type = (5%2 == 0)? "even":"odd";
+
+
+-> SWitch Statements
+
+ switch(variable){
+  case 1:
+  case 2:
+  case 3:
+
+  default:
+ }//switch case me agar ek cse true ho gya toh ushke baad wala sara condition true ho jata hai
+   jishke liye hmko break ka use karna hota hai.
+
+-> Loops
+ while Loop (should have terminating condition)
+ for Loop ( initialisation; condition; updation)
+ do while Loop
+
+-> continue statements
+ (to skip an iteration)
+
+-> Pattern
+ number of line = ourter loop;
+ number of time = inner loop;
+ what to print
